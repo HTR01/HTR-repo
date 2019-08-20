@@ -29,7 +29,7 @@ public class movement2 : MonoBehaviour
         //  }
         //gameObject.transform.position += new Vector3(0, 0, Input.GetAxis("Horizontal"));
         MovePaddle(Input.GetAxis("Vertical"));
-        Debug.Log(Input.GetAxis("Vertical"));
+        //Debug.Log(Input.GetAxis("Vertical"));
     }
 
     public void MovePaddle(float inputAxisInfo)
