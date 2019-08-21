@@ -21,15 +21,24 @@ public class ballManage : MonoBehaviour
     }
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         SpawnBall();
+        InvokeRepeating("SpawnBall", 1f, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            //Destroy();
 
+            int angleIndex = Random.Range(0, 4);
+            GameObject ballCopy = Instantiate(ball, transform.position, Quaternion.Euler(0, potentialAngles[angleIndex], 0));
+        }
     }
 }

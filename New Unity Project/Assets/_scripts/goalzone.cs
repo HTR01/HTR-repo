@@ -11,7 +11,7 @@ public class goalzone : MonoBehaviour
     {
         Destroy(other.gameObject);
 
-        ballManage.instance.SpawnBall();
+        //ballManage.instance.SpawnBall();
 
         if (teamname == "Pink")
         {
